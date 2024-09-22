@@ -50,4 +50,6 @@ The service sends the count of unique requests received every minute. This task 
 
 ---
 
-*Note:* To check the state of the codebase after each iteration/extension, please refer to the respective git commits.
+*Note:* 
+  - To check the state of the codebase after each iteration/extension, please refer to the respective git commits.
+  - To use the **GET** endpoint successfully, make sure your Redis server and Kafka service is up and running locally.
