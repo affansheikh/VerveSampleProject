@@ -2,7 +2,7 @@ package com.verve.VerveSampleProject.api.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -33,9 +33,13 @@ public class VerveSampleProjectController {
         try {
             incomingUniqueRequests.putIfAbsent(id, true);
             if (httpEndpoint != null && !httpEndpoint.isEmpty()) {
-                String urlWithParam = httpEndpoint + "?uniqueRequestsCount=" + uniqueRequestsPerMinute;
-                ResponseEntity<String> response = restTemplate.getForEntity(urlWithParam, String.class);
-                logger.info("Request to url {} returned Http response {}", urlWithParam, response.getStatusCode());
+                List<Integer> listOfIds = incomingUniqueRequests.keySet().stream().toList();
+                PostRequestDTO requestBody = new PostRequestDTO(listOfIds, uniqueRequestsPerMinute);
+                HttpHeaders headers = new HttpHeaders();
+                headers.setContentType(MediaType.APPLICATION_JSON);
+                HttpEntity<PostRequestDTO> entity = new HttpEntity<>(requestBody, headers);
+                ResponseEntity<String> response = restTemplate.exchange(httpEndpoint, HttpMethod.POST, entity, String.class);
+                logger.info("Request to url {} returned Http response {}", httpEndpoint, response.getStatusCode());
             }
             return "ok";
 
