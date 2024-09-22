@@ -1,11 +1,11 @@
 package com.verve.VerveSampleProject.api.controller;
 
+import com.verve.VerveSampleProject.api.KafkaMessagePublisher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.*;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +27,7 @@ public class VerveSampleProjectController {
     private RedisTemplate<String, Boolean> redisTemplate;
 
     @Autowired
-    private KafkaTemplate<String, String> kafkaTemplate;
+    private KafkaMessagePublisher kafkaMessagePublisher;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
@@ -68,6 +68,7 @@ public class VerveSampleProjectController {
     @Scheduled(fixedRate = 60000)
     public void logUniqueRequestsCount() {
         logger.info("The number of unique requests in past minute is {}", incomingUniqueRequests.size());
+        kafkaMessagePublisher.publishMessage("count: " + incomingUniqueRequests.size());
         incomingUniqueRequests.clear();
     }
 }
