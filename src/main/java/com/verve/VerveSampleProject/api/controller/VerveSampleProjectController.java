@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.*;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
 
@@ -22,10 +26,14 @@ public class VerveSampleProjectController {
     @Autowired
     private RedisTemplate<String, Boolean> redisTemplate;
 
-    private static final Logger logger = LoggerFactory.getLogger(VerveSampleProjectController.class);
+    @Autowired
+    private KafkaTemplate<String, String> kafkaTemplate;
+
     private final RestTemplate restTemplate = new RestTemplate();
 
-    private int uniqueRequestsPerMinute = 0;
+    private static final Logger logger = LoggerFactory.getLogger(VerveSampleProjectController.class);
+
+    private final ConcurrentMap<Integer, Boolean> incomingUniqueRequests = new ConcurrentHashMap<>();
 
     @GetMapping("/accept")
     public String processRequest(
@@ -36,12 +44,14 @@ public class VerveSampleProjectController {
             String redisKey = id.toString();
             if (Boolean.TRUE.equals(redisTemplate.opsForValue().get(redisKey))) {
                 logger.info("Duplicate request with id {}", redisKey);
-                return "ok";
+            } else {
+                redisTemplate.opsForValue().set(redisKey, true, 60, TimeUnit.SECONDS);
+                incomingUniqueRequests.putIfAbsent(id, true);
             }
-            redisTemplate.opsForValue().set(redisKey, true, 60, TimeUnit.SECONDS);
-            uniqueRequestsPerMinute++;
+
             if (httpEndpoint != null && !httpEndpoint.isEmpty()) {
-                PostRequestDTO requestBody = new PostRequestDTO(uniqueRequestsPerMinute);
+                List<Integer> listOfIds = incomingUniqueRequests.keySet().stream().toList();
+                PostRequestDTO requestBody = new PostRequestDTO(listOfIds, incomingUniqueRequests.size());
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.APPLICATION_JSON);
                 HttpEntity<PostRequestDTO> entity = new HttpEntity<>(requestBody, headers);
@@ -57,7 +67,7 @@ public class VerveSampleProjectController {
 
     @Scheduled(fixedRate = 60000)
     public void logUniqueRequestsCount() {
-        logger.info("The number of unique requests in past minute is {}", uniqueRequestsPerMinute);
-        uniqueRequestsPerMinute = 0;
+        logger.info("The number of unique requests in past minute is {}", incomingUniqueRequests.size());
+        incomingUniqueRequests.clear();
     }
 }
