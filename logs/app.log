@@ -1,0 +1,43 @@
+2024-09-21T16:45:48.954+02:00  INFO 11534 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : Starting VerveSampleProjectApplication using Java 22.0.2 with PID 11534 (/Users/affansheikh/Downloads/VerveSampleProject/target/classes started by affansheikh in /Users/affansheikh/Downloads/VerveSampleProject)
+2024-09-21T16:45:48.955+02:00  INFO 11534 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-09-21T16:45:49.324+02:00  INFO 11534 --- [VerveSampleProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-21T16:45:49.330+02:00  INFO 11534 --- [VerveSampleProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-21T16:45:49.331+02:00  INFO 11534 --- [VerveSampleProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-21T16:45:49.350+02:00  INFO 11534 --- [VerveSampleProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-21T16:45:49.350+02:00  INFO 11534 --- [VerveSampleProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2024-09-21T16:45:49.486+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-09-21T16:45:49.490+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-21T16:45:49.490+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-09-21T16:45:49.490+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-09-21T16:45:49.491+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-21T16:45:49.491+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-21T16:45:49.491+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-09-21T16:45:49.491+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@493ac8d3
+2024-09-21T16:45:49.510+02:00  INFO 11534 --- [VerveSampleProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-21T16:45:49.511+02:00  INFO 11534 --- [VerveSampleProject] [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-09-21T16:45:49.511+02:00  INFO 11534 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-21T16:45:49.516+02:00  INFO 11534 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : Started VerveSampleProjectApplication in 0.782 seconds (process running for 0.948)
+2024-09-21T16:45:49.516+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:45:55.519+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:01.520+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:07.520+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:13.518+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:19.520+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:25.520+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:31.520+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:37.518+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:43.515+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:49.518+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:55.520+02:00  INFO 11534 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique request in past minute is 0
+2024-09-21T16:46:57.783+02:00  INFO 11534 --- [VerveSampleProject] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-21T16:46:57.792+02:00  INFO 11534 --- [VerveSampleProject] [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-09-21T16:46:57.792+02:00  INFO 11534 --- [VerveSampleProject] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-09-21T16:46:57.792+02:00  INFO 11534 --- [VerveSampleProject] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-21T16:46:57.792+02:00  INFO 11534 --- [VerveSampleProject] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
