@@ -2275,3 +2275,611 @@ Caused by: org.apache.kafka.common.errors.TimeoutException: Topic unique-request
 2024-09-22T20:21:11.477+02:00  INFO 15230 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
 2024-09-22T20:21:11.477+02:00  WARN 15230 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
 2024-09-22T20:21:11.478+02:00  WARN 15230 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:28.181+02:00  INFO 15514 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : Starting VerveSampleProjectApplication using Java 22.0.2 with PID 15514 (/Users/affansheikh/Downloads/VerveSampleProject/target/classes started by affansheikh in /Users/affansheikh/Downloads/VerveSampleProject)
+2024-09-22T21:05:28.182+02:00  INFO 15514 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-09-22T21:05:28.421+02:00  INFO 15514 --- [VerveSampleProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-22T21:05:28.422+02:00  INFO 15514 --- [VerveSampleProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-22T21:05:28.432+02:00  INFO 15514 --- [VerveSampleProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-09-22T21:05:28.636+02:00  INFO 15514 --- [VerveSampleProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-22T21:05:28.643+02:00  INFO 15514 --- [VerveSampleProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-22T21:05:28.643+02:00  INFO 15514 --- [VerveSampleProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-22T21:05:28.666+02:00  INFO 15514 --- [VerveSampleProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-22T21:05:28.666+02:00  INFO 15514 --- [VerveSampleProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 465 ms
+2024-09-22T21:05:29.002+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-09-22T21:05:29.006+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-22T21:05:29.006+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-09-22T21:05:29.006+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-09-22T21:05:29.007+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-22T21:05:29.007+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-22T21:05:29.007+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-09-22T21:05:29.007+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@69bc9584
+2024-09-22T21:05:29.027+02:00  INFO 15514 --- [VerveSampleProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-22T21:05:29.028+02:00  INFO 15514 --- [VerveSampleProject] [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-09-22T21:05:29.028+02:00  INFO 15514 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-22T21:05:29.033+02:00  INFO 15514 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : Started VerveSampleProjectApplication in 1.057 seconds (process running for 1.217)
+2024-09-22T21:05:29.033+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique requests in past minute is 0
+2024-09-22T21:05:29.043+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = VerveSampleProject-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-09-22T21:05:29.055+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-22T21:05:29.095+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=VerveSampleProject-producer-1] Instantiated an idempotent producer.
+2024-09-22T21:05:29.111+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-22T21:05:29.111+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-22T21:05:29.111+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727031929111
+2024-09-22T21:05:29.187+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:29.188+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:29.188+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:29.290+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:29.290+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:29.290+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:29.396+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:29.396+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:29.397+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:29.657+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:29.658+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:29.658+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:30.071+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:30.071+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:30.071+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:30.791+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:30.792+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:30.793+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:31.721+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:31.722+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:31.722+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:32.648+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:32.649+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:32.649+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:33.677+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:33.677+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:33.677+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:34.552+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:34.553+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:34.553+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:35.426+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:35.426+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:35.426+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:36.429+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:36.429+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:36.430+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:37.432+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:37.433+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:37.433+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:38.436+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:38.437+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:38.437+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:39.437+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:39.438+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:39.438+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:40.410+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:40.410+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:40.410+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:41.410+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:41.410+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:41.410+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:42.413+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:42.414+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:42.414+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:43.338+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:43.339+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:43.339+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:44.312+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:44.313+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:44.313+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:45.184+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:45.184+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:45.184+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:46.234+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:46.235+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:46.235+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:47.142+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:47.142+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:47.142+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:48.167+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:48.168+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:48.169+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:49.195+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:49.196+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:49.196+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:50.071+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:50.072+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:50.072+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:50.893+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:50.894+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:50.894+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:51.815+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:51.816+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:51.816+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:52.816+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:52.817+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:52.817+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:53.636+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:53.637+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:53.637+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:54.687+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:54.688+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:54.688+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:55.664+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:55.664+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:55.664+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:56.640+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:56.640+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:56.640+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:57.616+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:57.617+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:57.618+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:58.644+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:58.645+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:58.645+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:05:59.648+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:05:59.649+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:05:59.649+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:00.651+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:00.652+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:00.652+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:01.525+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:01.526+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:01.526+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:02.448+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:02.448+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:02.449+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:03.268+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:03.269+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:03.269+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:04.191+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:04.192+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:04.193+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:05.217+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:05.218+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:05.218+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:06.219+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:06.219+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:06.219+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:07.244+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:07.244+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:07.244+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:08.247+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:08.248+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:08.248+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:09.224+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:09.225+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:09.225+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:10.248+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:10.248+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:10.248+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:11.121+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:11.122+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:11.122+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:12.170+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:12.171+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:12.171+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:13.197+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:13.197+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:13.198+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:14.122+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:14.123+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:14.123+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:14.996+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:14.997+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:14.997+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:16.024+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:16.024+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:16.024+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:16.894+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:16.895+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:16.895+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:17.869+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:17.870+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:17.870+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:18.688+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:18.689+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:18.689+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:19.724+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:19.725+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:19.725+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:20.726+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:20.727+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:20.727+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:21.598+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:21.598+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:21.598+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:22.642+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:22.643+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:22.643+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:23.645+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:23.646+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:23.646+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:24.672+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:24.673+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:24.673+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:25.695+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:25.696+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:25.696+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:26.697+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:26.698+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:26.698+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:27.698+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:27.699+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:27.699+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:28.700+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:28.700+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:28.700+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:29.119+02:00 ERROR 15514 --- [VerveSampleProject] [scheduling-1] o.s.k.support.LoggingProducerListener    : Exception thrown when sending a message with key='null' and payload='count: 0' to topic unique-requests-count:
+
+org.apache.kafka.common.errors.TimeoutException: Topic unique-requests-count not present in metadata after 60000 ms.
+
+2024-09-22T21:06:29.126+02:00 ERROR 15514 --- [VerveSampleProject] [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+org.springframework.kafka.KafkaException: Send failed
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:836) ~[spring-kafka-3.2.4.jar:3.2.4]
+	at org.springframework.kafka.core.KafkaTemplate.observeSend(KafkaTemplate.java:793) ~[spring-kafka-3.2.4.jar:3.2.4]
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:570) ~[spring-kafka-3.2.4.jar:3.2.4]
+	at com.verve.VerveSampleProject.api.KafkaMessagePublisher.publishMessage(KafkaMessagePublisher.java:14) ~[classes/:na]
+	at com.verve.VerveSampleProject.api.controller.VerveSampleProjectController.logUniqueRequestsCount(VerveSampleProjectController.java:72) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.13.jar:6.1.13]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.13.4.jar:1.13.4]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.1.13.jar:6.1.13]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+Caused by: org.apache.kafka.common.errors.TimeoutException: Topic unique-requests-count not present in metadata after 60000 ms.
+
+2024-09-22T21:06:29.128+02:00  INFO 15514 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique requests in past minute is 0
+2024-09-22T21:06:29.536+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:29.537+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:29.537+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:30.539+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:30.540+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:30.540+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:31.566+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:31.567+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:31.567+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:32.543+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:32.544+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:32.544+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:33.463+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:33.463+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:33.464+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:34.466+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:34.468+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:34.468+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:35.495+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:35.497+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:35.497+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:36.497+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:36.497+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:36.497+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:37.522+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:37.523+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:37.523+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:38.449+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:38.450+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:38.450+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:39.338+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:39.338+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:39.338+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:40.361+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:40.361+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:40.362+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:41.227+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:41.227+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:41.227+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:42.248+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:42.249+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:42.249+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:42.812+02:00  INFO 15514 --- [VerveSampleProject] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-22T21:06:43.205+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:43.206+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:43.206+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:44.129+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:44.130+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:44.130+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:06:45.156+02:00  INFO 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:06:45.157+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:06:45.157+02:00  WARN 15514 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:10.888+02:00  INFO 15711 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : Starting VerveSampleProjectApplication using Java 22.0.2 with PID 15711 (/Users/affansheikh/Downloads/VerveSampleProject/target/classes started by affansheikh in /Users/affansheikh/Downloads/VerveSampleProject)
+2024-09-22T21:53:10.889+02:00  INFO 15711 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-09-22T21:53:11.125+02:00  INFO 15711 --- [VerveSampleProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-22T21:53:11.126+02:00  INFO 15711 --- [VerveSampleProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-22T21:53:11.136+02:00  INFO 15711 --- [VerveSampleProject] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-09-22T21:53:11.326+02:00  INFO 15711 --- [VerveSampleProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-22T21:53:11.332+02:00  INFO 15711 --- [VerveSampleProject] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-22T21:53:11.332+02:00  INFO 15711 --- [VerveSampleProject] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-22T21:53:11.356+02:00  INFO 15711 --- [VerveSampleProject] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-22T21:53:11.357+02:00  INFO 15711 --- [VerveSampleProject] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 451 ms
+2024-09-22T21:53:11.679+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-09-22T21:53:11.683+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-09-22T21:53:11.683+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-09-22T21:53:11.684+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-09-22T21:53:11.684+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-09-22T21:53:11.684+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-09-22T21:53:11.684+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-09-22T21:53:11.684+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@45984654
+2024-09-22T21:53:11.704+02:00  INFO 15711 --- [VerveSampleProject] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-22T21:53:11.704+02:00  INFO 15711 --- [VerveSampleProject] [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-09-22T21:53:11.704+02:00  INFO 15711 --- [VerveSampleProject] [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-09-22T21:53:11.709+02:00  INFO 15711 --- [VerveSampleProject] [main] c.v.V.VerveSampleProjectApplication      : Started VerveSampleProjectApplication in 1.02 seconds (process running for 1.179)
+2024-09-22T21:53:11.709+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] c.v.V.a.c.VerveSampleProjectController   : The number of unique requests in past minute is 0
+2024-09-22T21:53:11.719+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = VerveSampleProject-producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2024-09-22T21:53:11.732+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-09-22T21:53:11.774+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=VerveSampleProject-producer-1] Instantiated an idempotent producer.
+2024-09-22T21:53:11.790+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-09-22T21:53:11.790+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-09-22T21:53:11.790+02:00  INFO 15711 --- [VerveSampleProject] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1727034791789
+2024-09-22T21:53:11.863+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:11.864+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:11.864+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:11.970+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:11.971+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:11.971+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:12.077+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:12.077+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:12.077+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:12.331+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:12.331+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:12.331+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:12.804+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:12.805+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:12.805+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:13.476+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:13.476+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:13.476+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:14.397+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:14.397+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:14.397+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:15.399+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:15.399+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:15.399+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:16.275+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:16.276+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:16.276+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:17.326+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:17.327+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:17.327+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:18.203+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:18.203+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:18.203+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:19.226+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:19.227+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:19.227+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:20.255+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:20.256+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:20.256+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:21.130+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:21.131+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:21.131+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:22.156+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:22.157+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:22.158+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:23.133+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:23.134+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:23.134+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:24.157+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:24.158+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:24.158+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:25.029+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:25.030+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:25.030+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:25.875+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:25.875+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:25.875+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:26.237+02:00  INFO 15711 --- [VerveSampleProject] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-09-22T21:53:26.920+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:26.921+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:26.921+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:27.897+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:27.898+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:27.898+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:28.923+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:28.924+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:28.924+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:29.924+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:29.925+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:29.925+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:30.926+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:30.926+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:30.926+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2024-09-22T21:53:31.929+02:00  INFO 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Node -1 disconnected.
+2024-09-22T21:53:31.930+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2024-09-22T21:53:31.930+02:00  WARN 15711 --- [VerveSampleProject] [kafka-producer-network-thread | VerveSampleProject-producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=VerveSampleProject-producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
