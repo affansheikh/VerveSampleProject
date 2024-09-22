@@ -61,6 +61,7 @@ public class VerveSampleProjectController {
             return "ok";
 
         } catch (Exception e) {
+            logger.error("The request processing failed due to error: {}", e.getMessage());
             return "failed";
         }
     }
